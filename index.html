@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Verification</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+
+<body>
+    <div class="page-bg"></div>
+
+    <div class="container">
+        <section class="hero">
+            <div class="hero-badge">Secure · Verified · Blockchain</div>
+            <h1>Academic Certificate Verification</h1>
+            <p>Instantly validate certificates on the blockchain using your wallet.</p>
+        </section>
+
+        <section class="card">
+            <label for="certId">Certificate ID</label>
+            <input type="text" id="certId" placeholder="e.g. CERT-12345" autocomplete="off">
+
+            <button id="verifyBtn" type="button">Verify Certificate</button>
+
+            <p id="status" class="status">Enter an ID and click Verify.</p>
+
+            <div id="result" class="result-card hidden"></div>
+        </section>
+
+        <footer>Powered by Web3 · Requires MetaMask</footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
